@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <body>
+        <ui:composition template="/#{usuarioController.template}">
+            <ui:define name="content">
+                <h:form>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <center>
+                        <p:accordionPanel style="width: 30%" multiple="true">
+                            <p:tab title="Misión">
+                                <h:panelGrid columns="2" cellpadding="10">
+                                    <h2>"Cuidar la Salud de los estudiantes y Promover la Educación Saludable 
+                                        con tal de que los estudiantes puedan realizar sus estudios de la mejor manera
+                                        y no sufran enfermedades las cuales frenen el potencial de cada uno de ellos"</h2> 
+                                </h:panelGrid>
+                            </p:tab>
+                            <p:tab title="Visión">
+                                <h:panelGrid columns="2" cellpadding="10">
+                                    <h2>"Con el tiempo, las enfermedades que más frecuentan en alumnos disminuirá 
+                                        radicalmente y existirán personas con mayor conocimiento sobre la salud"</h2>  
+                                </h:panelGrid>
+                            </p:tab>
+                            <p:tab title="Valores">
+                                <h:panelGrid columns="2" cellpadding="10">
+                                    <h2>"Para poder cumplir lo que buscamos son necesarios ciertos valores
+                                        tales como: Respeto, Sinceridad, Puntualidad, Valentía, Amor, Paciencia, y otros"</h2>  
+                                </h:panelGrid>
+                            </p:tab>
+                        </p:accordionPanel>
+                    </center>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
